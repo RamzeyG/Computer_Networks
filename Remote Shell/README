@@ -1,0 +1,47 @@
+/* Ramzey Ghanaim
+ *
+ * Remote Shell Application
+ *
+ * This application is a remote shell program
+ * consisting of a client that takes user input,
+ * sends input to the server, and receives a
+ * response to display to the user.
+ * The server receives the user command,
+ * executes the command line command, and sends
+ * the result back to the client.
+ *
+ *****************
+ * FILES:
+ *
+ *
+ * Makefile - File used for automating the build process
+ *
+ *
+ * src/myclient.c - client source code that takes input and displays output
+ *
+ * src/myserver.c - server source code that takes client input, and generates
+ *                   and sends output to a client
+ *
+ * README - This file
+ *
+ *
+ * doc/Documentation.pdf - Describes the design of the project, 
+ *                         including specification of protocol.
+ *
+ *
+ *
+ * bin/test.py - test python program that will test the client and server, ensure they work, 
+ *                and quit the processes
+ *               - In bin/ simply type "python test.py" to run 
+ *               - pexpect is needed to run properly
+ *
+ *
+ *
+ *  FEATURES:
+ *      1. Infinite output is supported. Infinite input is not. 
+ *      2. The client displays the prompt an extra line below the previous
+ *         line. This was a purposeful design choice I made.
+ *      3. The server catches CTRL+c and asks the user if they really want to quit
+ * 
+ *
+*/
