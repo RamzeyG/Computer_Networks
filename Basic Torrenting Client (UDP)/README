@@ -1,0 +1,59 @@
+/* Ramzey Ghanaim
+ *
+ * UDP Torrenting Client/Server
+ *
+ *****************
+ * FILES:
+ *
+ *
+ * Makefile - File used for automating the build process
+ *          
+ *
+ *
+ * src/myclient.c - client source code that takes input to downlad a file from a server
+ *
+ * src/myserver.c - server source code that takes a requested file and sends back
+ *                  the number of bytes of the file that were requested
+ *
+ * README - This file
+ * 
+ *
+ * doc/Documentation.pdf - Describes the design of the project, 
+ *                         including specification of protocol.
+ *
+ * clientBin/server-info.txt - server info file.
+ *
+ * serverBin/1mb.txt - 1mb test file that worked in my testing
+ *
+ * serverBin/tempFile.txt -  test file that worked in my testing
+ *
+ * serverBin/xs.txt - test file that worked in my testing
+ *
+ * serverBin/m.txt - test file that worked in my testing
+ *
+ *
+ * serverBin/large.txt - test file that worked in my testing
+ *
+ *
+ *  FEATURES:
+ *
+ *      1. Concurrent clients and servers are supported.
+ *     
+ *      2. If even 1 data packet fails from a server, new servers 
+ *         are gotten. This means if every server has some percentage
+ *         of failure, my program will not download the file.
+ *
+ *      3. maximum file name is 1000 chars. Up to 1mb file sizes have
+ *         been tested.
+ * 
+ *      4. This program worked locally. I had major issues running
+ *         it correctly on the timeshare via SSH. I discovered this 1.5hr before
+ *         the deadline
+ * 
+ *      5. When running the server, use the "e" flag to enable the exiting of the child process
+ *         after a connection has been established to simulating a bad
+ *         server. Every child process that connects to this server will bee
+ *         killed.
+ * 
+ *
+*/
