@@ -1,0 +1,49 @@
+/* Ramzey Ghanaim
+ * Web Browser Proxy
+ *
+ * This program is a local proxy that blocks
+ * HTTP websites listed in the bin/forbidden.txt
+ * file.
+ * 
+ * NOTE: HTPS does not work.
+ *****************
+ * FILES:
+ *
+ *
+ * Makefile - File used for automating the build process
+ *          
+ *
+ *
+ * src/proxy.c - Main proxy program that intercepts web traffic, filters it,
+ *               and sends data to a server, and sends messages back to a browser.
+ *
+ * README - This file
+ * 
+ *
+ * doc/Documentation.pdf - Describes the design of the project, 
+ *                         including specification of protocol.
+ *
+ * bin/forbidden.txt - server info file.
+ *
+ *
+ *
+ *
+ *  FEATURES:
+ *
+ *      1. Once compiled, type "make run" to run the program with a default
+ *         port of 8080 and a forbidden file of "forbidden.txt".
+ *
+ *      2. Support for missing packets is not supported.
+ *
+ *      3. logged requests are place in the file "access.log" that is generated
+ *         in the directory the proxy is ran.
+ *     
+ *      4. http (not https) Tested sites include, but not limited to:
+ *         
+ *                  example.com
+ *                  pudim.com.br
+ *                  stealmylogin.com
+ *                  zdnet.com
+ * 
+ *
+*/
