@@ -1,0 +1,43 @@
+/* Ramzey Ghanaim
+ * FTP Client-Server
+ *
+ * This program is my own implementation of
+ * a basic FTP Client and server.
+ *****************
+ * FILES:
+ *
+ *
+ * Makefile - File used for automating the build process
+ *          
+ *
+ *
+ * src/ftpclient.c - client source code that takes input to execute on the ftpserver
+ *
+ * src/ftpserver.c - server source code that takes a request and sends back a
+ *                   message as well as data.
+ *                   
+ *
+ * README - This file
+ * 
+ *
+ * doc/Documentation.pdf - Describes the design of the project, 
+ *                         including specification of protocol.
+ *
+ *
+ * serverBin/1mb.txt - 1mb test file that worked in my testing
+ *
+ * serverBin/test.txt -  test file that worked in my testing
+ *
+ *
+ *
+ *  FEATURES:
+ *
+ *      1. Normal ls, get, put, quit commands work.
+ *
+ *     
+ *      2. Randomly there are issues where a command does not
+ *         execute completely. It was super rare, so I could not
+ *         completely test and remove the problem.
+ * 
+ *
+*/
